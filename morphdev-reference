@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Morph Dev Technical/Jargon Reference Sheet</title>
+        <link rel="icon" type="image/x-icon" href="https://morphdev.co/favicon.png">
+    </head>
+    <body>
+        <style>
+            html {
+                scroll-behavior: smooth;
+                background-color: rgb(50,50,50);
+            }
+
+            #container {
+                background-color: rgb(30,30,30);
+            }
+            p, h1, h2, h3, h4 {
+                color: white;
+            }
+
+            a {
+                color: #149414;
+            }
+
+            a:hover {
+                color: #1fde1f;
+            }
+
+            .heading {
+                font-size: 25px;
+                padding: 15px;
+            }
+            .description {
+                padding: 20px;
+            }
+        </style>
+
+        <div id="container">
+            <div id="api">
+                <h1 class="heading">API</h1>
+                <p class="description">
+                    API - Application Programming Interface <br>
+                    From Wikipedia: An application programming interface is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.
+                    <br>
+                    API is a generic term that encompasses many possible contexts. In the case of Morph Dev an api typically refers to communicating with a <a href="#server">sever</a> to get data from or send data to a web based <a href="#saas">SaaS</a>. 
+                </p>
+            </div>
+            <hr>
+            <div id="client">
+                <h1 class="heading">Client</h1>
+                <p class="description">
+                    A client is a computer or program that is making requests to a <a href="#server">server</a>. Often this refers to the user's computer's web browser when browsing a website.
+                </p>
+            </div>
+            <hr>
+            <div id="CSS">
+                <h1 class="heading">CSS</h1>
+                <p class="description">
+                    CSS - Cascading Style Sheet <br>
+                    Used in combination with <a href="#html">HTML</a> CSS adds styling information to your webpage structure. This includes font and element sizing, color information, and even animations.
+                </p>
+            </div>
+            <hr>
+            <div id="database">
+                <h1 class="heading">Database (DB)</h1>
+                <p class="description">
+                    A database is a store of information. In the context of a website, a server will query a database for text or images and other content (typically a text link to a file location on a server)
+                </p>
+            </div>
+            <hr>
+            <div id="html">
+                <h1 class="heading">HTML</h1>
+                <p class="description">
+                    HTML - HyperText Markup Language <br>
+                    A text encoding system for defining webpage structure. In other words, the framework for how content (text, images, etc) is displayed in the web browser.
+                    Right click this page and click inspect to view the html code that is rendering this content.
+                </p>
+            </div>
+            <hr>
+            <div id="JS">
+                <h1 class="heading">JavaScript (JS)</h1>
+                <p class="description">
+                    JavaScript is an interpreted programming language. Its popularity has led to its use in varied ways accross software development but is most closely associated with internet technologies. Along with <a href="#html">HTML</a> 
+                    and <a href="#CSS">CSS</a>, Javascript is one of the 3 technologies that makes up the modern web (At least for the <a href="#client">Client</a>). Where HTML provides the structure of a webpage and CSS provides the visual styling, JavaScript provides the functionality and logic.
+                    For example JS can be used to do everything from make network requests to respond to user input on a page. JavaScript is excecuted on the client's computer after the website files have be downloaded from the server.
+                </p>
+            </div>
+            <hr>
+            <div id="JSON">
+                <h1 class="heading">JSON</h1>
+                <p class="description">
+                    JSON - JavaScript Object Notation <br>
+                    JSON is a text based organization of information often used in web technologies. Queries to a <a href="#database">Database</a> often return data formatted as JSON<br>
+                    Example: <br>
+                    { <br>
+                        &emsp;"exampleKey": "exampleValue", <br>
+                        &emsp;"exampleKey2" : [ <br>
+                        &emsp;&emsp;    "arrayKey": "arrayKeyValue", <br>
+                        &emsp;&emsp;    "arrayKey2": "arrayKeyVlaue", <br>
+                        &emsp;] <br>
+                    }
+                </p>
+            </div>
+            <hr>
+            <div id="react">
+                <h1 class="heading">React</h1>
+                <p class="description">
+                    React is a javascript framework used for making <a href="#spa">SPAs</a>. React is one of many javascript frameworks but it is the one most used at Morph Dev
+                </p>
+            </div>
+            <hr>
+            <div id="saas">
+                <h1 class="heading">SASS</h1>
+                <p class="description">
+                    SaaS - Software as a Service <br>
+                    Software that uses some kind of subscription model for user access e.g. Adobe Creative Suite. This can refer to native downloadable applications as well as cloud based software such as Twilio/SendGrid. In the latter
+                    case, often the main feature of the service is its <a href="#api">API</a>. 
+                </p>
+            </div>
+            <hr>
+            <div id="server">
+                <h1 class="heading">Server</h1>
+                <p class="description">
+                    A server is a computer that is listening for network requests and returns a response. The response could be any kind of data but typically it will be a website (<a href="#html">HTML</a>/<a href="#JS">JavaScript</a>/<a href="#CSS">CSS</a>),
+                    an image, a video, or a data object of some kind e.g. <a href="#JSON">JSON</a>
+                </p>
+            </div>
+            <hr>
+            <div id="spa">
+                <h1 class="heading">SPA</h1>
+                <p class="description">
+                    SPA - Single Page Application <br>
+                    An SPA is a webpage where all of the website structure (and sometimes content) is delivered in the initial response from the <a href="#server">server</a>. Site navigation takes place via javascript code and content is loaded in dynamically from the server.
+                    SPAa have the advantage of a much more responsive user experience since all of the website's code is downloaded to the <a href="#client">Client</a> immediately and they tend to feel like a native application rather than a website.
+                </p>
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
